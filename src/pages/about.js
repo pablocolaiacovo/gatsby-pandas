@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import NewsletterForm from "../components/newsletterForm"
 
 export default ({ data }) => (
   <Layout>
@@ -9,6 +10,8 @@ export default ({ data }) => (
     <hr />
     <Img fixed={data.file.childImageSharp.fixed} />
     <p>{data.site.siteMetadata.author}</p>
+    <hr />
+    <NewsletterForm />
   </Layout>
 )
 
