@@ -3,9 +3,11 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import NewsletterForm from "../components/newsletterForm"
+import SEO from "../components/seo"
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="About" />
     <h1>About {data.site.siteMetadata.title}</h1>
     <hr />
     <Img fixed={data.file.childImageSharp.fixed} />

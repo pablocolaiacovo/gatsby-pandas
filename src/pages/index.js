@@ -3,9 +3,11 @@ import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="Home" />
     <h1>Amazing Pandas Eating Things</h1>
     <div>
       <img
